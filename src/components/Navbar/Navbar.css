@@ -61,6 +61,7 @@
   .n-right{
     display: flex;
     flex-direction: column-reverse;
+    margin-left: -6rem;
 
   }
 
