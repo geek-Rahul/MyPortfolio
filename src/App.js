@@ -14,9 +14,9 @@ function App() {
   const darkMode = theme.state.darkMode;
   return (
     <div
-      className="App"
+      className={darkMode ? "darkApp" :"App"}
       style={{
-        background: darkMode ? "black" : "",
+        
         color: darkMode ? "white" : "",
       }}
     >

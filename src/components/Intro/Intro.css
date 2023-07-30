@@ -117,4 +117,9 @@
     /* display: none; */
     top: -7rem !important;;
   }
+
+  .floating-div1{
+      padding-left: -200px;
+      margin-left: -70px;
+  }
 }

@@ -2,7 +2,13 @@ import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-const navbar = () => {
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+
+const Navbar = () => {
+
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
+
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
@@ -12,7 +18,8 @@ const navbar = () => {
       </div>
       {/* right */}
       <div className="n-right">
-        <div className="n-list">
+        <div className={
+          showMediaIcons ? "menu-link mobile-menu-link" : "n-list"}>
           <ul style={{ listStyleType: "none" }}>
             <li>
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
@@ -40,13 +47,23 @@ const navbar = () => {
               </Link>
             </li> */}
           </ul>
+          <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu />
+            </a>
+          </div>
         </div>
         <Link to="contact" spy={true} smooth={true}>
-        <button className="button n-button">Contact</button>
+          <button className="button n-button">Contact</button>
         </Link>
+        <div className="hamburger-menu">
+          <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            <GiHamburgerMenu />
+          </a>
+        </div>
       </div>
     </div>
   );
 };
 
-export default navbar;
+export default Navbar;

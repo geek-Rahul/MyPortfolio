@@ -16,6 +16,12 @@
     overflow: hidden;
     color: var(--black);    
 }
+.darkApp{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    background: rgb(0,0,0);
+    background: linear-gradient(95deg, rgba(0,0,0,1) 63%, rgba(46,47,9,1) 100%);
+}
 
 .button {
     background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);

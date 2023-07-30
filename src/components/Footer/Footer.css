@@ -3,7 +3,20 @@
   align-items: center;
   margin: -0.5rem -3.5rem;
   position: relative;
-  margin-top: -7rem;
+  margin-top: 2rem;
+  background-color: var(--yellow);
+  height: 100px;
+}
+
+
+.darkfooter {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: 2rem;
+  background-color: black;
+  height: 100px;
 }
 .f-content {
   position: absolute;
@@ -12,8 +25,8 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 4rem;
-  gap: 4rem;
+  margin-top: 1rem;
+  gap: 0.5rem;
   color: white;
 }
 .f-icons {
