@@ -47,11 +47,7 @@ const Navbar = () => {
               </Link>
             </li> */}
           </ul>
-          <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
-          </div>
+          
         </div>
         <Link to="contact" spy={true} smooth={true}>
           <button className="button n-button">Contact</button>
