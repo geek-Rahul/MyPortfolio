@@ -3,10 +3,12 @@ import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
 import chatApp from "../../img/chatApp.png";
-import Ecommerce from "../../img/ecommerce.png";
+import Ecommerce from "../../img/Ecommerce.png";
 import placementPrep from "../../img/placementPrep.png";
+import ecamResources from "../../img/ecamResources.png";
 import MusicApp from "../../img/musicapp.png";
 import { themeContext } from "../../Context";
+
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -24,17 +26,21 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={chatApp} className="chatApp" alt="" />
+          <a href="https://placementportfolio.netlify.app/"><img src={placementPrep} className="placementPrep" alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={placementPrep} className="placementPrep" alt="" />
+          <a href="https://ecam-resources.netlify.app/"><img src={ecamResources} className="placementPrep" alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <a href="https://shoping-cart-app.netlify.app/"><img src={Ecommerce} className="placementPrep" alt="" /></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <a href="#"><img src={chatApp} className="chatApp" alt="" /></a>
         </SwiperSlide>
+        <SwiperSlide>
+          <a href="#"><img src={MusicApp} className="placementPrep" alt="" /></a>
+        </SwiperSlide>
+
       </Swiper>
     </div>
   );
